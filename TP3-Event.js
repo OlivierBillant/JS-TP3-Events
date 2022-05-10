@@ -19,11 +19,25 @@ function mirrorInput(){
 
 
 // Exercice 2 : 
-// Ajouter un champ de type password pour saisir le mot de passe et la confirmation du motDePasse. 
+// Ajouter un champ de type password pour saisir le mot de passe et la confirmation du motDePasse.
 // Faire une fonction javascript déclenchée quand l'utilisateur saisi du texte dans l'un des input 
 // pour afficher la vérification des mots de passe en temps réel dans un paragraphe en dessous
+let paragrapheMessage = document.getElementById("message")
+let message = document.createElement("message");
+paragrapheMessage.appendChild(message);
 
-
+function checkPw(){
+    let pw1 = document.getElementById("pw1").value;
+    let pw2 = document.getElementById("pw2").value;
+    
+    if (pw1 !== pw2){
+        message.innerHTML = "Les deux mots de passes ne correspondent pas"
+        message.style.color = "red";
+    }else{
+    message.innerHTML = "Les deux mots de passes sont identiques"
+    message.style.color = "green";
+}
+}
 
 // Exercice 3 : 
 // jouter un champ de type password pour saisir le mot de passe. Ajouter une icone avec un oeil. 
