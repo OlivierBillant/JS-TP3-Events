@@ -29,14 +29,17 @@ paragrapheMessage.appendChild(message);
 function checkPw(){
     let pw1 = document.getElementById("pw1").value;
     let pw2 = document.getElementById("pw2").value;
+    let inputInscrire = document.getElementById("inputInscription");
     
     if (pw1 !== pw2){
         message.innerHTML = "Les deux mots de passes ne correspondent pas"
         message.style.color = "red";
+        inputInscrire.disabled = true;
     }else{
-    message.innerHTML = "Les deux mots de passes sont identiques"
-    message.style.color = "green";
-}
+        message.innerHTML = "Les deux mots de passes sont identiques"
+        message.style.color = "green";
+        inputInscrire.disabled = false;
+    }
 }
 
 // Exercice 3 : 
