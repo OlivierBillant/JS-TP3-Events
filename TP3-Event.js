@@ -45,3 +45,4 @@ function checkPw(){
 // Un autre clic cache le mot de passe.
 let inputPw3 = document.getElementById("pw3");
 inputPw3.setAttribute("class", "fa-solid fa-eye");
+// testtest
