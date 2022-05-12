@@ -40,6 +40,6 @@ function checkPw(){
 }
 
 // Exercice 3 : 
-// jouter un champ de type password pour saisir le mot de passe. Ajouter une icone avec un oeil. 
+// Ajouter un champ de type password pour saisir le mot de passe. Ajouter une icone avec un oeil.
 // Au clic sur cet oeil, le mot de passe est révélé. 
 // Un autre clic cache le mot de passe.
