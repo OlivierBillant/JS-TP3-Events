@@ -29,17 +29,23 @@ paragrapheMessage.appendChild(message);
 function checkPw(){
     let pw1 = document.getElementById("pw1").value;
     let pw2 = document.getElementById("pw2").value;
+    let inputInscrire = document.getElementById("inputInscription");
     
     if (pw1 !== pw2){
         message.innerHTML = "Les deux mots de passes ne correspondent pas"
         message.style.color = "red";
+        inputInscrire.disabled = true;
     }else{
-    message.innerHTML = "Les deux mots de passes sont identiques"
-    message.style.color = "green";
-}
+        message.innerHTML = "Les deux mots de passes sont identiques"
+        message.style.color = "green";
+        inputInscrire.disabled = false;
+    }
 }
 
 // Exercice 3 : 
 // Ajouter un champ de type password pour saisir le mot de passe. Ajouter une icone avec un oeil.
 // Au clic sur cet oeil, le mot de passe est révélé. 
 // Un autre clic cache le mot de passe.
+let inputPw3 = document.getElementById("pw3");
+inputPw3.setAttribute("class", "fa-solid fa-eye");
+// testtest
